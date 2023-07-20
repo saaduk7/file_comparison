@@ -1,0 +1,5 @@
+[FOLDER_PATHS]  
+folder_1 = Test/Case1	
+folder_2 = Test/Case2
+detailed_report= true
+output_path = Test/DETAILED.xlsx
