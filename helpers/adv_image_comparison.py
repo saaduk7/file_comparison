@@ -2,8 +2,7 @@ import cv2
 import numpy as np
 import sys
 from PIL import Image
-# modify 1287 with try except
-import pyemf
+import pyemf3
 from scipy.linalg import norm
 
 
@@ -95,11 +94,11 @@ def compare_image_files(img1, img2):
     return difference list.
     """
     diff_list = list()
-    # Load the emf version via pyemf library
+    # Load the emf version via pyemf3 library
     options = {'verbose': False, 'save': False, 'outputfile': None}  
-    emf_a= pyemf.EMF(verbose=False)
+    emf_a= pyemf3.EMF(verbose=False)
     emf_a.load(img1)
-    emf_b= pyemf.EMF(verbose=False)
+    emf_b= pyemf3.EMF(verbose=False)
     emf_b.load(img2)
     
     # load via PIL library for opencv processing
