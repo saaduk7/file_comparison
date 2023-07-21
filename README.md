@@ -12,7 +12,7 @@ All the libraries except pyemf3 are given in requirements.txt and can be intsall
 
   pip install -r requirements.txt
 
-Library pyemf3 is present at https://github.com/jeremysanders/pyemf3 . Line 544 needs to be modified from 
+Library pyemf3 is present at https://github.com/jeremysanders/pyemf3 . Line 544 in pyemf3/field.py needs to be modified from 
   txt = txt.decode('utf-16le')
 to
   try:
