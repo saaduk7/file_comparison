@@ -8,6 +8,10 @@ an excel file with listed differnces at the output path. The file can be found h
 file_comparison.py: In order to use the python files we need to setup the python following python libraries which are being use by the tool.
   openpyxl, configparser , numpy, scipy, opencv, pyemf3, PIL (pillow).
 
+All the libraries except pyemf3 are given in requirements.txt and can be intsalled using:
+
+  pip install -r requirements.txt
+
 Library pyemf3 is present at https://github.com/jeremysanders/pyemf3 . Line 544 needs to be modified from 
   txt = txt.decode('utf-16le')
 to
@@ -16,6 +20,7 @@ to
   except:
       txt=""
 
+Then we can use pip install pyemf3-master.zip to install pyemf3
 
 Once the libraries are install you can run the file_comparison.py file using python file_comparison.py. It also needs config.txt file where the folder paths and output path is stated.
 
